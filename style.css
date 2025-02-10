@@ -8,19 +8,30 @@ article{
     background-color: #FFD54F;
     font-weight: bold;
     border: 2px solid #FFA000;
+    animation: colorchange2 2s;
 }
 
 .featured:hover{
     background-color: #FFB300;
-    animation: colorchange 5s;
+    animation: colorchange1 2s;
 }
 
-@keyframes colorchange {
+@keyframes colorchange1 {
     from{
         background-color: #FFD54F;
     }
 
     to{
+        background-color: #FFB300;
+    }
+}
+
+@keyframes colorchange2 {
+    to{
+        background-color: #FFD54F;
+    }
+
+    from{
         background-color: #FFB300;
     }
 }
