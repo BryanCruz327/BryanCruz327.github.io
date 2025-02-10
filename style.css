@@ -10,6 +10,21 @@ article{
     border: 2px solid #FFA000;
 }
 
+.featured:hover{
+    background-color: #FFB300;
+    animation: colorchange 5s;
+}
+
+@keyframes colorchange {
+    from{
+        background-color: #FFD54F;
+    }
+
+    to{
+        background-color: #FFB300;
+    }
+}
+
 article p{
     line-height: 1.5;
     font-style: italic;
