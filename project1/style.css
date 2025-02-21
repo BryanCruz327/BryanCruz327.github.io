@@ -1,0 +1,140 @@
+h1{
+    font-size: xx-large;
+    margin-bottom: 10px;
+    color: white;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 100%;
+}
+
+body{
+    margin:auto;
+    width: 75%;
+    max-width: 100%;
+    background-color: rgb(56, 56, 56);
+}
+
+div, section, footer{
+    background-color: white;
+    padding: 25px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+nav ul li, nav ul li a{
+    text-decoration: none;
+    list-style: none;
+    padding: 15px;
+    color: goldenrod;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: goldenrod;
+    font-weight: bolder;
+    font-size: 110%;
+}
+
+#currentPage{
+    color: white;
+    font-size: 120%;
+}
+
+#currentPage:hover{
+    color: white;
+    font-weight: bolder;
+    font-size: 140%;
+}
+
+p{
+    margin:10px;
+}
+
+img{
+    width: 100%;
+}
+
+.photoGrid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.photoElement{
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    width: auto;
+}
+
+.photoElement img {
+    max-width: 500px;
+}
+
+.photoElement p{
+    max-width: 260px;
+    padding: 20px;
+    background-color: gold;
+    margin: auto;
+    text-align: center;
+    border: 3px black solid;
+}
+
+.blogPost h2, .blogPost p{
+    animation: slideIn 1.5s;
+    background-color: rgb(255, 241, 161);
+    padding: 10px;
+}
+
+.blogPost ul li{
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    background-color: goldenrod;
+    list-style: none;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#headerPanels{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+#headerPanels .headerPages{
+    max-width: 275px;
+    max-height: 350px;
+    background-color: rgb(211, 211, 211);
+}
+
+.headerPages p, .headerPages h2 {
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from{
+        margin-left: 100%
+    }
+
+    to{
+        margin-left: 0;
+    }
+}
