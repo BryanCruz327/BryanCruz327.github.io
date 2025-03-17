@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Selection</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <section class="container">
+        <form id="characterForm" type="get" action="page3.html">
+            <fieldset>
+                <legend>Choose Your Character</legend>
+
+                <input type="radio" id="Aria" name="characterSelect">
+                <label for="Aria">
+                    <strong>Aria, the Warrior:</strong>
+                    Strong and brave, with the ability to overcome physical obstacles.
+                </label>
+                <br>
+
+                <input type="radio" id="Eldrin" name="characterSelect">
+                <label for="Eldrin">
+                    <strong>Eldrin, the Mage:</strong>
+                    Wise and knowledgeable, with the power to solve puzzles and cast spells.
+                </label>
+                <br>
+
+                <input type="radio" id="Tara" name="characterSelect">
+                <label for="Tara">
+                    <strong>Tara, the Rogue</strong>
+                    Quick and cunning, with skills in stealth and persuasion.
+                </label>
+
+                <input type="submit" id="submit">
+                <label for="submit"></label>
+
+                <!-- 1. Why is it important for each radio button to have a unique ID? -->
+                <!-- So that each button is associated to its proper input -->
+
+                <!-- 2. How can we ensure that only one character can be selected at a time?-->
+                <!-- Using radio buttons, as they only allow one input -->
+
+                <!-- 3. What could happen if the labels aren't correctly associated with the radio buttons? -->
+                <!-- If they don't all share a name, they will not be treated as a group of buttons associated to one another -->
+
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>

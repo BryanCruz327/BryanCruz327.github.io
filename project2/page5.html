@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Journey Continues</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <section class="container">
+        <h1>The Journey Continues</h1>
+        <p>With the guardian's riddle behind you, the path forward splits into three. Each route is known to favor certain traits: strength, wisdom, or stealth. Choose your path wisely, as it will influence the challenges you face ahead.</p>
+        <form method="get" action="page6.html">
+            <label></label>
+            <select id="pathChoice" name="pathChoice" required 
+            onchange="if(value=stl){location.href='page5b.html'}">
+
+                <option value="">-- Please choose an option --</option>
+                <option value="str">Path of Strength</option>
+                <option value="wis">Path of Wisdom</option>
+                <option value="stl">Path of Stealth</option>
+            </select>
+
+            <input type="submit" id="submitButton" value="Continue on Your Journey">
+        </form>
+
+        <p>Your choice will not only test your abilities but also reveal deeper truths about your character.</p>
+    </section>
+</body>
+</html>
