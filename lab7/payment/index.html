@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Payment Page</title>
+    </head>
+    <body>
+        <h1>
+            Add Check Payment
+        </h1>
+        <form id="checkForm">
+            <div>
+                <label for="name">Name on the Check: </label>
+                <input type="text" id="name" name="name">
+                <span id="nameError" class="error form-text" ></span><br>
+                <br>
+
+                <label for="date">Expense Date: </label>
+                <input type="date" id="date" name="date">
+                <span id="dateError" class="error form-text" ></span><br>
+                <br>
+
+                <label for="amount">Check Amount: </label>
+                <input type="text" id="amount" name="amount">
+                <span id="amountError" class="error form-text" ></span><br>
+                <br>
+
+                <label for="bank">Bank: </label>
+                <input type="text" id="bank" name="bank">
+                <span id="bankError" class="error form-text" ></span><br>
+                <br>
+
+                <label for="accountNum">Account Number: </label>
+                <input type="text" id="accountNum" name="accountNum">
+                <span id="accountNumError" class="error form-text" ></span><br>
+                <br>
+
+                <button type="submit">Submit</button>
+
+            </div>
+        </form>
+
+        <script src="script.js" defer></script>
+    </body>
+</html>

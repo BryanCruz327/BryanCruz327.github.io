@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Expense Page</title>
+    </head>
+    <body>
+        <h1>
+            Add Expenses
+        </h1>
+        <form id="expenseForm">
+            <div>
+                <label for="place">Place of Expense: </label>
+                <input type="text" id="place" name="place">
+                <span id="placeError" class="error form-text" ></span><br>
+                <br>
+
+                <label for="date">Expense Date: </label>
+                <input type="date" id="date" name="date">
+                <span id="dateError" class="error form-text" ></span><br>
+                <br>
+
+                <label for="amount">Expense Amount: </label>
+                <input type="text" id="amount" name="amount">
+                <span id="amountError" class="error form-text" ></span><br>
+                <br>
+
+
+                <input type="checkbox" id="expense1" name="expense1">
+                <label for="expense1">Groceries</label><br>
+
+                <input type="checkbox" id="expense2" name="expense2">
+                <label for="expense2">Car Payments</label><br>
+
+                <input type="checkbox" id="expense3" name="expense3">
+                <label for="expense3">Clothes</label><br>
+
+                <input type="checkbox" id="expense4" name="expense4">
+                <label for="expense4">Hobbies</label><br>
+
+                <input type="checkbox" id="expense5" name="expense5">
+                <label for="expense5">Bills</label><br>
+                <span id="expenseError" class="error form-text" ></span><br>
+
+
+                <label for="mode">Mode of Payment: </label>
+                <select name="mode" id="mode">
+                    <option value="" id="na">--Select an Option--</option>
+                    <option value="credit" id="valid">Credit Card</option>
+                    <option value="debit" id="valid">Debit Card</option>
+                    <option value="cash" id="valid">Cash</option>
+                </select>
+                <span id="modeError" class="error form-text" ></span><br><br>
+
+                <label for="explain">Explain Below (Optional): </label><br>
+                <textarea id="explain" name="explain" rows="4" cols="50">
+                    
+                </textarea><br>
+
+                <button type="submit">Submit</button>
+
+            </div>
+        </form>
+
+        <script src="script.js" defer></script>
+    </body>
+</html>
